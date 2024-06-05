@@ -12,7 +12,7 @@ import { sharedStyles } from '../../shared-styles';
 
 export class KorGrid extends LitElement {
   @property({ type: Number, reflect: true }) columns = 12;
-  @property({ type: Number, reflect: true }) rows: Number | undefined;
+  @property({ type: Number, reflect: true }) rows?: number;
   @property({ type: String, reflect: true }) spacing: 's' | 'm' | 'l' = 'm';
 
   static get styles() {

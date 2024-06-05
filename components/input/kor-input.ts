@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { ifDefined } from 'lit/directives/if-defined';
+import { ifDefined } from 'lit/directives/if-defined.js';
 import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../card';

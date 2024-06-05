@@ -1,23 +1,77 @@
 <!DOCTYPE html>
-<html lang="en" theme="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#1bb566" />
     <title>Component Playground</title>
     <link rel="stylesheet" href="kor-styles.css" />
     <script type="module" src="/index.ts"></script>
+
+    <script>
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (event) => {
+          const newColorScheme = event.matches ? "dark" : "light";
+          document.documentElement.setAttribute("theme", newColorScheme);
+        });
+
+      console.log(theme);
+    </script>
   </head>
 
   <body>
     <!-- page -->
-    <kor-page >
-      <!-- app bar -->
+    <kor-page>
       <kor-app-bar
         slot="top"
         logo="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"
-        label="MyApp"
-      ></kor-app-bar>
+        label="Gabseu"
+      >
+        <kor-tabs>
+          <kor-tab-item label="Active" active></kor-tab-item>
+          <kor-tab-item label="Idle"></kor-tab-item>
+          <kor-tab-item label="Disabled" disabled></kor-tab-item>
+        </kor-tabs>
+        <kor-icon
+          slot="functions"
+          button
+          icon="brightness_3"
+          onKeyPress="document.documentElement.setAttribute('theme', 'dark')"
+          onclick="document.documentElement.setAttribute('theme', 'dark')"
+        ></kor-icon>
+        <kor-icon
+          slot="functions"
+          button
+          icon="brightness_7"
+          onKeyPress="document.documentElement.setAttribute('theme', 'light')"
+          onclick="document.documentElement.setAttribute('theme', 'light')"
+        ></kor-icon>
+        <kor-icon
+          slot="left"
+          button
+          icon="brightness_3"
+          onKeyPress="document.documentElement.setAttribute('theme', 'dark')"
+          onclick="document.documentElement.setAttribute('theme', 'dark')"
+        ></kor-icon>
+        <kor-icon
+          slot="right"
+          button
+          icon="brightness_7"
+          onKeyPress="document.documentElement.setAttribute('theme', 'light')"
+          onclick="document.documentElement.setAttribute('theme', 'light')"
+        ></kor-icon>
+        <!-- avatar -->
+        <kor-avatar
+          slot="functions"
+          label="First Middle Last"
+          info="Information text"
+          image="https://i.pinimg.com/736x/96/49/ab/9649ab38c2b8bffdcdfe7ef437e52bf8.jpg"
+        ></kor-avatar>
+      </kor-app-bar>
+      <!-- panes -->
+      <kor-pane slot="left" label="Left Pane"></kor-pane>
     </kor-page>
   </body>
 </html>

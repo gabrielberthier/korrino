@@ -70,7 +70,7 @@ html, body {
   --spacing-xs: calc(var(--spacing-s) / 2);
   --spacing-s: 8px;
   --spacing-m: calc(var(--spacing-s) * 1.5);
-  --spacing-l: calc(var(--spacing-s) * 2);;
+  --spacing-l: calc(var(--spacing-s) * 2);
   font-family: 'open-sans', sans-serif;
   font-style: normal;
   font-weight: 400;
