@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 
 /**
@@ -8,7 +8,7 @@ import { sharedStyles } from '../../shared-styles';
  * @slot - Hosts kor-tab-items.
  */
 
-export class korTabs extends LitElement {
+export class KorTabs extends LitElement {
   @property({ type: String, reflect: true }) orientation:
     | 'horizontal'
     | 'vertical' = 'horizontal';
@@ -55,5 +55,5 @@ export class korTabs extends LitElement {
 }
 
 if (!window.customElements.get('kor-tabs')) {
-  window.customElements.define('kor-tabs', korTabs);
+  window.customElements.define('kor-tabs', KorTabs);
 }

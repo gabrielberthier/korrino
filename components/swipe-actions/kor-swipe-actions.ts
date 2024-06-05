@@ -9,7 +9,7 @@ import { sharedStyles } from '../../shared-styles';
  * @event swipe-left - Fired when the user swipes left more than 1/3 of the element's width
  */
 
-export class korSwipeActions extends LitElement {
+export class KorSwipeActions extends LitElement {
   static get styles() {
     return [
       sharedStyles,
@@ -94,5 +94,5 @@ export class korSwipeActions extends LitElement {
 }
 
 if (!window.customElements.get('kor-swipe-actions')) {
-  window.customElements.define('kor-swipe-actions', korSwipeActions);
+  window.customElements.define('kor-swipe-actions', KorSwipeActions);
 }

@@ -6,11 +6,11 @@ import { LitElement } from 'lit';
  *
  * @slot - The slot where the content is rendered.
  */
-export declare class korGrid extends LitElement {
+export declare class KorGrid extends LitElement {
     columns: number;
     rows: Number | undefined;
     spacing: 's' | 'm' | 'l';
     static get styles(): import("lit").CSSResultGroup[];
-    render(): import("lit-html").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
     attributeChangedCallback(name: string, oldval: string, newval: string): void;
 }

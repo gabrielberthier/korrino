@@ -10,14 +10,14 @@ import '../text';
  *
  * @slot - The main content area. If used, replaces the label and icon elements.
  */
-export declare class korTabItem extends LitElement {
+export declare class KorTabItem extends LitElement {
     label: string | undefined;
     icon: string | undefined;
     active: boolean | undefined;
     disabled: boolean | undefined;
     orientation: 'horizontal' | 'vertical';
     static get styles(): import("lit").CSSResultGroup[];
-    render(): import("lit-html").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
     attributeChangedCallback(name: string, oldval: string, newval: string): void;
     connectedCallback(): void;
     handleActive(): void;

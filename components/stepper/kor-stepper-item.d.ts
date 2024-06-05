@@ -10,7 +10,7 @@ import '../text';
  * @prop {Boolean} disabled - If set to true, disables mouse clicks and the style gets updated.
  * @prop {'horizontal'|'vertical'} orientation - Defines the orientation of the component. Possible values are `horizontal` and `vertical`.
  */
-export declare class korStepperItem extends LitElement {
+export declare class KorStepperItem extends LitElement {
     label: string | undefined;
     info: string | undefined;
     icon: string | undefined;
@@ -21,7 +21,7 @@ export declare class korStepperItem extends LitElement {
     last: boolean | undefined;
     orientation: 'horizontal' | 'vertical';
     static get styles(): import("lit").CSSResultGroup[];
-    render(): import("lit-html").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
     attributeChangedCallback(name: string, oldval: string, newval: string): void;
     connectedCallback(): void;
     getIndex(): void;

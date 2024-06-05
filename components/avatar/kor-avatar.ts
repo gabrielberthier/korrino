@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../icon';
 import '../text';
@@ -11,7 +11,7 @@ import '../text';
  * @prop {Boolean} condensed - If set, the image is shown in a smaller size.
  */
 
-export class korAvatar extends LitElement {
+export class KorAvatar extends LitElement {
   @property({ type: String, reflect: true }) label: string | undefined;
   @property({ type: String, reflect: true }) info: string | undefined;
   @property({ type: String, reflect: true }) image: string | undefined;
@@ -117,5 +117,5 @@ export class korAvatar extends LitElement {
 }
 
 if (!window.customElements.get('kor-avatar')) {
-  window.customElements.define('kor-avatar', korAvatar);
+  window.customElements.define('kor-avatar', KorAvatar);
 }

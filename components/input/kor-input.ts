@@ -1,6 +1,6 @@
 import { LitElement, css, html } from 'lit';
-import { ifDefined } from 'lit-html/directives/if-defined';
-import { property } from 'lit/decorators';
+import { ifDefined } from 'lit/directives/if-defined';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../card';
 import '../icon';
@@ -27,7 +27,7 @@ import '../icon';
  * @slot functions - Displayed on the right side.
  */
 
-export class korInput extends LitElement {
+export class KorInput extends LitElement {
   @property({ type: String, reflect: true }) label: string | undefined;
   @property({ type: String, reflect: true }) icon: string | undefined;
   @property({ type: String, reflect: true }) value: string | undefined;
@@ -477,5 +477,5 @@ export class korInput extends LitElement {
 }
 
 if (!window.customElements.get('kor-input')) {
-  window.customElements.define('kor-input', korInput);
+  window.customElements.define('kor-input', KorInput);
 }

@@ -20,7 +20,7 @@ import '../icon';
  * @cssprop --functions-gap - Defines the gap between elements in the functions slot.
  * @cssprop --footer-gap - Defines the gap between elements in the footer slot.
  */
-export declare class korModal extends LitElement {
+export declare class KorModal extends LitElement {
     label: string | undefined;
     icon: string | undefined;
     height: string;
@@ -32,6 +32,6 @@ export declare class korModal extends LitElement {
     emptyFunctions: boolean;
     emptyFooter: boolean;
     static get styles(): import("lit").CSSResultGroup[];
-    render(): import("lit-html").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
     attributeChangedCallback(name: string, oldval: string, newval: string): void;
 }

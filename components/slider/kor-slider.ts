@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../text';
 
@@ -12,7 +12,7 @@ import '../text';
  * @prop {Boolean} input - If set to true, allows the user to input a value using the keyboard.
  */
 
-export class korSlider extends LitElement {
+export class KorSlider extends LitElement {
   @property({ type: String, reflect: true }) label: string | undefined;
   @property({ type: Number, reflect: true }) value = 50;
   @property({ type: Number, reflect: true }) min = 0;
@@ -189,5 +189,5 @@ export class korSlider extends LitElement {
 }
 
 if (!window.customElements.get('kor-slider')) {
-  window.customElements.define('kor-slider', korSlider);
+  window.customElements.define('kor-slider', KorSlider);
 }

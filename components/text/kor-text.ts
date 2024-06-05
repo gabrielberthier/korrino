@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 
 /**
@@ -9,7 +9,7 @@ import { sharedStyles } from '../../shared-styles';
  * @slot - Container where plain text (and/or other elements) is written.
  */
 
-export class korText extends LitElement {
+export class KorText extends LitElement {
   @property({ type: String, reflect: true }) size = 'body-1';
   @property({ type: String, reflect: true }) color:
     | 'header-1'
@@ -57,5 +57,5 @@ export class korText extends LitElement {
 }
 
 if (!window.customElements.get('kor-text')) {
-  window.customElements.define('kor-text', korText);
+  window.customElements.define('kor-text', KorText);
 }

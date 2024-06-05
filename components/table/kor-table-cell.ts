@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../icon';
 import '../text';
@@ -15,7 +15,7 @@ import '../text';
  * @slot - Hosts plain text or other elements.
  */
 
-export class korTableCell extends LitElement {
+export class KorTableCell extends LitElement {
   @property({ type: Number, reflect: true, attribute: 'grid-cols' }) gridCols:
     | number
     | undefined;
@@ -119,5 +119,5 @@ export class korTableCell extends LitElement {
 }
 
 if (!window.customElements.get('kor-table-cell')) {
-  window.customElements.define('kor-table-cell', korTableCell);
+  window.customElements.define('kor-table-cell', KorTableCell);
 }

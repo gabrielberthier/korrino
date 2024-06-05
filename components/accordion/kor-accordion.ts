@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property, state } from 'lit/decorators';
+import { property, state } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../icon';
 import '../card';
@@ -21,7 +21,7 @@ import '../card';
  * @cssprop --footer-gap - Defines the gap between elements in the footer slot.
  */
 
-export class korAccordion extends LitElement {
+export class KorAccordion extends LitElement {
   @property({ type: String, reflect: true }) label = 'Label';
   @property({ type: String, reflect: true }) icon: string | undefined;
   @property({ type: Boolean, reflect: true }) expanded: boolean | undefined;
@@ -169,5 +169,5 @@ export class korAccordion extends LitElement {
 }
 
 if (!window.customElements.get('kor-accordion')) {
-  window.customElements.define('kor-accordion', korAccordion);
+  window.customElements.define('kor-accordion', KorAccordion);
 }

@@ -1,1 +1,1 @@
-export { korDivider } from './kor-divider';
+export { KorDivider } from './kor-divider';

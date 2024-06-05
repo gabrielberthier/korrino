@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../text';
 
@@ -8,7 +8,7 @@ import '../text';
  * @prop {'s'|'m'|'l'} size - Defines the size of the component. Possible values are `s`(24px), `m`(32px) and `l`(40px).
  */
 
-export class korSpinner extends LitElement {
+export class KorSpinner extends LitElement {
   @property({ type: String, reflect: true }) size: 's' | 'm' | 'l' = 'm';
   @property({ type: String, reflect: true }) label: string | undefined;
 
@@ -93,5 +93,5 @@ export class korSpinner extends LitElement {
 }
 
 if (!window.customElements.get('kor-spinner')) {
-  window.customElements.define('kor-spinner', korSpinner);
+  window.customElements.define('kor-spinner', KorSpinner);
 }

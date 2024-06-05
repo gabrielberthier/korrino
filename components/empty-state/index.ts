@@ -1,1 +1,1 @@
-export { korEmptyState } from './kor-empty-state';
+export { KorEmptyState } from './kor-empty-state';

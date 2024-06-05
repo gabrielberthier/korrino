@@ -1,1 +1,1 @@
-export { korIcon } from './kor-icon';
+export { KorIcon } from './kor-icon';

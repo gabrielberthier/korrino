@@ -1,1 +1,1 @@
-export { korGrid } from './kor-grid';
+export { KorGrid } from './kor-grid';

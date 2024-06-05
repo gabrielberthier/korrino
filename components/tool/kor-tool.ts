@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../icon';
 import '../text';
@@ -13,7 +13,7 @@ import '../text';
  * @prop {Boolean} disabled - If set to true, disables mouse clicks and the style gets updated.
  */
 
-export class korTool extends LitElement {
+export class KorTool extends LitElement {
   @property({ type: String, reflect: true }) label: string | undefined;
   @property({ type: String, reflect: true }) icon: string | undefined;
   @property({ type: String, reflect: true }) size: 's' | 'm' = 'm';
@@ -97,5 +97,5 @@ export class korTool extends LitElement {
 }
 
 if (!window.customElements.get('kor-tool')) {
-  window.customElements.define('kor-tool', korTool);
+  window.customElements.define('kor-tool', KorTool);
 }

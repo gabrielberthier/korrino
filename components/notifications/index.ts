@@ -1,2 +1,2 @@
-export { korNotificationItem } from './kor-notification-item';
-export { korNotifications } from './kor-notifications';
+export { KorNotificationItem } from './kor-notification-item';
+export { KorNotifications } from './kor-notifications';

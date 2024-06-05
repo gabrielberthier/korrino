@@ -5,7 +5,7 @@ import { sharedStyles } from '../../shared-styles';
  * @slot - Hosts kor-switch-items.
  */
 
-export class korSwitch extends LitElement {
+export class KorSwitch extends LitElement {
   static get styles() {
     return [
       sharedStyles,
@@ -32,5 +32,5 @@ export class korSwitch extends LitElement {
 }
 
 if (!window.customElements.get('kor-switch')) {
-  window.customElements.define('kor-switch', korSwitch);
+  window.customElements.define('kor-switch', KorSwitch);
 }

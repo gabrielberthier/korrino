@@ -9,10 +9,10 @@ import '../text';
  *
  * @cssprop --footer-gap - Defines the gap between elements in the footer slot.
  */
-export declare class korEmptyState extends LitElement {
+export declare class KorEmptyState extends LitElement {
     label: string | undefined;
     icon: string | undefined;
     static get styles(): import("lit").CSSResultGroup[];
-    render(): import("lit-html").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
     attributeChangedCallback(name: string, oldval: string, newval: string): void;
 }

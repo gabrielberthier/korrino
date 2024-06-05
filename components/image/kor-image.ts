@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../text';
 
@@ -15,7 +15,7 @@ import '../text';
  * @slot bottom - The container for components overlayed at the bottom corner of the image.
  */
 
-export class korImage extends LitElement {
+export class KorImage extends LitElement {
   @property({ type: String, reflect: true }) src: string | undefined;
   @property({ type: String, reflect: true }) alt: string | undefined;
   @property({ type: String, reflect: true }) height: string | undefined;
@@ -125,5 +125,5 @@ export class korImage extends LitElement {
 }
 
 if (!window.customElements.get('kor-image')) {
-  window.customElements.define('kor-image', korImage);
+  window.customElements.define('kor-image', KorImage);
 }

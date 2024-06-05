@@ -1,5 +1,5 @@
 {
-  "name": "@kor-ui/kor",
+  "name": "@korrino/korrino-ui",
   "version": "1.11.3",
   "description": "Web components library containing lightweight, ready-to-use and framework-agnostic User Interface elements.",
   "scripts": {
@@ -7,20 +7,23 @@
     "build": "webpack --config webpack.dev.config.js && npm run analyze",
     "analyze": "wca analyze 'components/**/kor-*.ts' --outFile custom-elements.json",
     "publish": "npm run build && lerna publish",
-    "format": "prettier --write --single-quote components/*/kor-*"
+    "format": "prettier --write --single-quote components/*/kor-*",
+    "dev": "vite"
   },
   "author": "Eduardo Ferreira",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^20.14.1",
     "copy-webpack-plugin": "^5.1.2",
-    "html-webpack-plugin": "^3.2.0",
-    "lerna": "^3.22.0",
+    "html-webpack-plugin": "^5.6.0",
+    "lerna": "^3.22.1",
     "terser-webpack-plugin": "^2.3.8",
-    "ts-loader": "^6.2.2",
-    "typescript": "^3.9.9",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.2"
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.12",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   },
   "homepage": "https://kor-ui.com",
   "repository": {
@@ -38,6 +41,6 @@
   ],
   "gitHead": "b0ae13e43894b4a4afd5b47aca9bd72026fac89a",
   "dependencies": {
-    "lit": "^2.0.0-rc.2"
+    "lit": "^3.1.3"
   }
 }

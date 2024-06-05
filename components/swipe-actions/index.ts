@@ -1,2 +1,2 @@
-export { korSwipeActions } from './kor-swipe-actions';
-export { korSwipeAction } from './kor-swipe-action';
+export { KorSwipeActions } from './kor-swipe-actions';
+export { KorSwipeAction } from './kor-swipe-action';

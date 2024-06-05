@@ -7,11 +7,11 @@ import { LitElement } from 'lit';
  * @slot - The container where the table body is rendered (kor-table-rows).
  * @slot header - The container for the header (kor-table-row). It does not scroll with the content, but remains sticky on top.
  */
-export declare class korTable extends LitElement {
+export declare class KorTable extends LitElement {
     readonly: boolean | undefined;
     condensed: boolean | undefined;
     columns: string;
     static get styles(): import("lit").CSSResultGroup[];
-    render(): import("lit-html").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
     attributeChangedCallback(name: string, oldval: string, newval: string): void;
 }

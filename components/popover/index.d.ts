@@ -1,1 +1,1 @@
-export { korPopover } from './kor-popover';
+export { KorPopover } from './kor-popover';

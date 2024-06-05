@@ -1,1 +1,1 @@
-export { korSlider } from './kor-slider';
+export { KorSlider } from './kor-slider';

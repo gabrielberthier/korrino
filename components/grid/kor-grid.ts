@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 
 /**
@@ -10,7 +10,7 @@ import { sharedStyles } from '../../shared-styles';
  * @slot - The slot where the content is rendered.
  */
 
-export class korGrid extends LitElement {
+export class KorGrid extends LitElement {
   @property({ type: Number, reflect: true }) columns = 12;
   @property({ type: Number, reflect: true }) rows: Number | undefined;
   @property({ type: String, reflect: true }) spacing: 's' | 'm' | 'l' = 'm';
@@ -299,5 +299,5 @@ export class korGrid extends LitElement {
 }
 
 if (!window.customElements.get('kor-grid')) {
-  window.customElements.define('kor-grid', korGrid);
+  window.customElements.define('kor-grid', KorGrid);
 }

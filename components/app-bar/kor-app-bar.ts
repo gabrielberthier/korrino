@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 
 /**
@@ -17,7 +17,7 @@ import { sharedStyles } from '../../shared-styles';
  * @cssprop --functions-gap - Defines the gap between elements in the functions slot.
  */
 
-export class korAppBar extends LitElement {
+export class KorAppBar extends LitElement {
   @property({ type: String, reflect: true }) label: string | undefined;
   @property({ type: String, reflect: true }) logo: string | undefined;
   @property({ type: Boolean, reflect: true }) mobile: boolean | undefined;
@@ -121,5 +121,5 @@ export class korAppBar extends LitElement {
 }
 
 if (!window.customElements.get('kor-app-bar')) {
-  window.customElements.define('kor-app-bar', korAppBar);
+  window.customElements.define('kor-app-bar', KorAppBar);
 }

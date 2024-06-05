@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property, state } from 'lit/decorators';
+import { property, state } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../popover';
 
@@ -22,7 +22,7 @@ import '../popover';
  * @cssprop --footer-gap - Defines the gap between elements in the footer slot.
  */
 
-export class korTooltip extends LitElement {
+export class KorTooltip extends LitElement {
   @property({ type: String, reflect: true }) label: string | undefined;
   @property({ type: String, reflect: true }) icon: string | undefined;
   @property({ type: String, reflect: true, attribute: 'flex-direction' })
@@ -126,5 +126,5 @@ export class korTooltip extends LitElement {
 }
 
 if (!window.customElements.get('kor-tooltip')) {
-  window.customElements.define('kor-tooltip', korTooltip);
+  window.customElements.define('kor-tooltip', KorTooltip);
 }

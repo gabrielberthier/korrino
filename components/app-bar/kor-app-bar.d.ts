@@ -13,12 +13,12 @@ import { LitElement } from 'lit';
  *
  * @cssprop --functions-gap - Defines the gap between elements in the functions slot.
  */
-export declare class korAppBar extends LitElement {
+export declare class KorAppBar extends LitElement {
     label: string | undefined;
     logo: string | undefined;
     mobile: boolean | undefined;
     static get styles(): import("lit").CSSResultGroup[];
-    render(): import("lit-html").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
     attributeChangedCallback(name: string, oldval: string, newval: string): void;
     handleLogoClick(): void;
 }

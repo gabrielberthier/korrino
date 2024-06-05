@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../icon';
 import '../text';
@@ -13,7 +13,7 @@ import '../text';
  * @fires remove - Dispatched when clicking on the close icon (removable only).
  */
 
-export class korTag extends LitElement {
+export class KorTag extends LitElement {
   @property({ type: String, reflect: true }) label = 'Label';
   @property({ type: String, reflect: true }) icon: string | undefined;
   @property({ type: Boolean, reflect: true }) button: boolean | undefined;
@@ -83,5 +83,5 @@ export class korTag extends LitElement {
 }
 
 if (!window.customElements.get('kor-tag')) {
-  window.customElements.define('kor-tag', korTag);
+  window.customElements.define('kor-tag', KorTag);
 }

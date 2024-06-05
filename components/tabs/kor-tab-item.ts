@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../icon';
 import '../text';
@@ -14,7 +14,7 @@ import '../text';
  * @slot - The main content area. If used, replaces the label and icon elements.
  */
 
-export class korTabItem extends LitElement {
+export class KorTabItem extends LitElement {
   @property({ type: String, reflect: true }) label: string | undefined;
   @property({ type: String, reflect: true }) icon: string | undefined;
   @property({ type: Boolean, reflect: true }) active: boolean | undefined;
@@ -134,5 +134,5 @@ export class korTabItem extends LitElement {
 }
 
 if (!window.customElements.get('kor-tab-item')) {
-  window.customElements.define('kor-tab-item', korTabItem);
+  window.customElements.define('kor-tab-item', KorTabItem);
 }

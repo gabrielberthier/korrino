@@ -1,8 +1,9 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import {customElement, property} from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 
-export class korSwipeAction extends LitElement {
+@customElement('kor-swipe-action')
+export class KorSwipeAction extends LitElement {
   @property({ reflect: true }) icon: string | undefined;
   @property({ reflect: true, attribute: 'bg-color' }) bgColor:
     | string
@@ -54,8 +55,4 @@ export class korSwipeAction extends LitElement {
   connectedCallback() {
     super.connectedCallback();
   }
-}
-
-if (!window.customElements.get('kor-swipe-action')) {
-  window.customElements.define('kor-swipe-action', korSwipeAction);
 }

@@ -1,1 +1,1 @@
-export { korImage } from './kor-image';
+export { KorImage } from './kor-image';

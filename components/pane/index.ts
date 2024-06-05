@@ -1,1 +1,1 @@
-export { korPane } from './kor-pane';
+export { KorPane } from './kor-pane';

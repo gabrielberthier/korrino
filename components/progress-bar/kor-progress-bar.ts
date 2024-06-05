@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../icon';
 import '../text';
@@ -15,7 +15,7 @@ import '../text';
  * @prop {Boolean} showProgress - If set to true, the value (in %) will be visible.
  */
 
-export class korProgressBar extends LitElement {
+export class KorProgressBar extends LitElement {
   @property({ type: String, reflect: true }) label: string | undefined;
   @property({ type: String, reflect: true }) info: string | undefined;
   @property({ type: String, reflect: true }) status:
@@ -232,5 +232,5 @@ export class korProgressBar extends LitElement {
 }
 
 if (!window.customElements.get('kor-progress-bar')) {
-  window.customElements.define('kor-progress-bar', korProgressBar);
+  window.customElements.define('kor-progress-bar', KorProgressBar);
 }

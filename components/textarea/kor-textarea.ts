@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 
 /**
@@ -12,7 +12,7 @@ import { sharedStyles } from '../../shared-styles';
  * @prop {Boolean} autofocus - If set to true, the component gets focused as soon as the page loads.
  */
 
-export class korTextarea extends LitElement {
+export class KorTextarea extends LitElement {
   @property({ type: String, reflect: true }) label: string | undefined;
   @property({ type: String, reflect: true }) value: string | undefined;
   @property({ type: Number, reflect: true }) rows = 1;
@@ -175,6 +175,6 @@ export class korTextarea extends LitElement {
 if (!window.customElements.get('kor-textarea')) {
   window.customElements.define(
     'kor-textarea',
-    <CustomElementConstructor>korTextarea
+    <CustomElementConstructor>KorTextarea
   );
 }

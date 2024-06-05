@@ -6,14 +6,14 @@ import { LitElement } from 'lit';
  * @prop {Boolean} button - If set to true, updates hover, click effects and cursors.
  * @prop {Boolean} disabled -	If set to true, disables mouse clicks and the style gets updated.
  */
-export declare class korIcon extends LitElement {
+export declare class KorIcon extends LitElement {
     icon: string | undefined;
     color: string | undefined;
     size: 's' | 'm' | 'l' | 'xl';
     button: boolean | undefined;
     disabled: boolean | undefined;
     static get styles(): import("lit").CSSResultGroup[];
-    render(): import("lit-html").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
     attributeChangedCallback(name: string, oldval: string, newval: string): void;
     private setBackgroundImage;
 }

@@ -1,2 +1,2 @@
-export { korSwitchItem } from './kor-switch-item';
-export { korSwitch } from './kor-switch';
+export { KorSwitchItem } from './kor-switch-item';
+export { KorSwitch } from './kor-switch';

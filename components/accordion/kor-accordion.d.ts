@@ -17,7 +17,7 @@ import '../card';
  * @cssprop --functions-gap - Defines the gap between elements in the functions slot.
  * @cssprop --footer-gap - Defines the gap between elements in the footer slot.
  */
-export declare class korAccordion extends LitElement {
+export declare class KorAccordion extends LitElement {
     label: string;
     icon: string | undefined;
     expanded: boolean | undefined;
@@ -27,7 +27,7 @@ export declare class korAccordion extends LitElement {
     emptyBody: boolean;
     emptyFooter: boolean;
     static get styles(): import("lit").CSSResultGroup[];
-    render(): import("lit-html").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
     attributeChangedCallback(name: string, oldval: string, newval: string): void;
     connectedCallback(): void;
     handleCollapse(e: any): void;

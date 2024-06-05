@@ -22,7 +22,7 @@ import '../icon';
  * @slot - Displayed inside the content area.
  * @slot functions - Displayed on the right side.
  */
-export declare class korInput extends LitElement {
+export declare class KorInput extends LitElement {
     label: string | undefined;
     icon: string | undefined;
     value: string | undefined;
@@ -40,7 +40,7 @@ export declare class korInput extends LitElement {
     max: string | undefined;
     step: number;
     static get styles(): import("lit").CSSResultGroup[];
-    render(): import("lit-html").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
     constructor();
     handleChange(e: any): void;
     handleClear(): void;

@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../icon';
 import '../text';
@@ -15,7 +15,7 @@ import '../text';
  * @slot functions - Shown on the right side.
  */
 
-export class korMenuItem extends LitElement {
+export class KorMenuItem extends LitElement {
   @property({ type: String, reflect: true }) label = 'Label';
   @property({ type: String, reflect: true }) icon: string | undefined;
   @property({ type: Boolean, reflect: true }) active: boolean | undefined;
@@ -97,5 +97,5 @@ export class korMenuItem extends LitElement {
 }
 
 if (!window.customElements.get('kor-menu-item')) {
-  window.customElements.define('kor-menu-item', korMenuItem);
+  window.customElements.define('kor-menu-item', KorMenuItem);
 }

@@ -11,7 +11,7 @@ import '../text';
  *
  * @slot - Hosts plain text or other elements.
  */
-export declare class korTableCell extends LitElement {
+export declare class KorTableCell extends LitElement {
     gridCols: number | undefined;
     alignment: string;
     head: boolean | undefined;
@@ -19,7 +19,7 @@ export declare class korTableCell extends LitElement {
     sortable: boolean | undefined;
     sortDirection: string | undefined;
     static get styles(): import("lit").CSSResultGroup[];
-    render(): import("lit-html").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
     attributeChangedCallback(name: string, oldval: string, newval: string): void;
     handleSort(): void;
 }

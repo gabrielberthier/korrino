@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../icon';
 import '../text';
@@ -11,7 +11,7 @@ import '../text';
  * @prop {Boolean} disabled - If set to true, disables mouse clicks and the style gets updated.
  */
 
-export class korSwitchItem extends LitElement {
+export class KorSwitchItem extends LitElement {
   @property({ type: String, reflect: true }) label: string | undefined;
   @property({ type: String, reflect: true }) icon: string | undefined;
   @property({ type: Boolean, reflect: true }) active: boolean | undefined;
@@ -98,5 +98,5 @@ export class korSwitchItem extends LitElement {
 }
 
 if (!window.customElements.get('kor-switch-item')) {
-  window.customElements.define('kor-switch-item', korSwitchItem);
+  window.customElements.define('kor-switch-item', KorSwitchItem);
 }

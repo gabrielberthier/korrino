@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../icon';
 import '../text';
@@ -13,7 +13,7 @@ import '../text';
  * @cssprop --footer-gap - Defines the gap between elements in the footer slot.
  */
 
-export class korEmptyState extends LitElement {
+export class KorEmptyState extends LitElement {
   @property({ type: String, reflect: true }) label: string | undefined;
   @property({ type: String, reflect: true }) icon: string | undefined;
 
@@ -71,5 +71,5 @@ export class korEmptyState extends LitElement {
 }
 
 if (!window.customElements.get('kor-empty-state')) {
-  window.customElements.define('kor-empty-state', korEmptyState);
+  window.customElements.define('kor-empty-state', KorEmptyState);
 }

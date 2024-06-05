@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 
 /**
@@ -11,7 +11,7 @@ import { sharedStyles } from '../../shared-styles';
  * @slot header - The container for the header (kor-table-row). It does not scroll with the content, but remains sticky on top.
  */
 
-export class korTable extends LitElement {
+export class KorTable extends LitElement {
   @property({ type: Boolean, reflect: true }) readonly: boolean | undefined;
   @property({ type: Boolean, reflect: true }) condensed: boolean | undefined;
   @property({ type: String, reflect: true }) columns = 'repeat(24, 1fr)';
@@ -51,5 +51,5 @@ export class korTable extends LitElement {
 }
 
 if (!window.customElements.get('kor-table')) {
-  window.customElements.define('kor-table', korTable);
+  window.customElements.define('kor-table', KorTable);
 }

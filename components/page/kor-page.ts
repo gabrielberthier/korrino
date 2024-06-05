@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 
 /**
@@ -16,7 +16,7 @@ import { sharedStyles } from '../../shared-styles';
  * @slot right - Shown on the right side. Hosts components such as kor-pane.
  */
 
-export class korPage extends LitElement {
+export class KorPage extends LitElement {
   @property({ type: String, reflect: true }) theme:
     | 'dark'
     | 'light'
@@ -83,5 +83,5 @@ export class korPage extends LitElement {
 }
 
 if (!window.customElements.get('kor-page')) {
-  window.customElements.define('kor-page', korPage);
+  window.customElements.define('kor-page', KorPage);
 }

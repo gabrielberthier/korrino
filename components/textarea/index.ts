@@ -1,1 +1,1 @@
-export { korTextarea } from './kor-textarea';
+export { KorTextarea } from './kor-textarea';

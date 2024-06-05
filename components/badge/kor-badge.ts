@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../icon';
 import '../text';
@@ -9,7 +9,7 @@ import '../text';
  * @prop {'error'|'warning'|'success'|undefined} status - If set, a status icon is shown inside the badge. Accepted values are `error`, `warning`, `success`.
  */
 
-export class korBadge extends LitElement {
+export class KorBadge extends LitElement {
   @property({ type: Number, reflect: true }) label: number | undefined;
   @property({ type: String, reflect: true }) status:
     | 'error'
@@ -107,5 +107,5 @@ export class korBadge extends LitElement {
 }
 
 if (!window.customElements.get('kor-badge')) {
-  window.customElements.define('kor-badge', korBadge);
+  window.customElements.define('kor-badge', KorBadge);
 }

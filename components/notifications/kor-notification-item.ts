@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property, state } from 'lit/decorators';
+import { property, state } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../card';
 import '../icon';
@@ -22,7 +22,7 @@ import '../icon';
  * @cssprop --footer-gap - Defines the gap between elements in the footer slot.
  */
 
-export class korNotificationItem extends LitElement {
+export class KorNotificationItem extends LitElement {
   @property({ type: String, reflect: true }) label: string | undefined;
   @property({ type: String, reflect: true }) icon: string | undefined;
   @property({ type: String, reflect: true, attribute: 'flex-direction' })
@@ -118,5 +118,5 @@ export class korNotificationItem extends LitElement {
 }
 
 if (!window.customElements.get('kor-notification-item')) {
-  window.customElements.define('kor-notification-item', korNotificationItem);
+  window.customElements.define('kor-notification-item', KorNotificationItem);
 }

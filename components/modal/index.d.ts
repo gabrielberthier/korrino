@@ -1,1 +1,1 @@
-export { korModal } from './kor-modal';
+export { KorModal } from './kor-modal';

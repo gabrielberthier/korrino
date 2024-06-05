@@ -7,7 +7,7 @@ import '../app-bar';
  * @slot functions - Shown on the right side.
  */
 
-export class korNavbar extends LitElement {
+export class KorNavbar extends LitElement {
   static get styles() {
     return [
       sharedStyles,
@@ -33,5 +33,5 @@ export class korNavbar extends LitElement {
 }
 
 if (!window.customElements.get('kor-nav-bar')) {
-  window.customElements.define('kor-nav-bar', korNavbar);
+  window.customElements.define('kor-nav-bar', KorNavbar);
 }

@@ -8,7 +8,7 @@ import '../text';
  * @prop {Number} step - Defines the steps to skip when the user drags the thumb.
  * @prop {Boolean} input - If set to true, allows the user to input a value using the keyboard.
  */
-export declare class korSlider extends LitElement {
+export declare class KorSlider extends LitElement {
     label: string | undefined;
     value: number;
     min: number;
@@ -16,7 +16,7 @@ export declare class korSlider extends LitElement {
     step: number;
     input: boolean | undefined;
     static get styles(): import("lit").CSSResultGroup[];
-    render(): import("lit-html").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
     attributeChangedCallback(name: string, oldval: string, newval: string): void;
     firstUpdated(): void;
     private handleInput;

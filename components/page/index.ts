@@ -1,1 +1,1 @@
-export { korPage } from './kor-page';
+export { KorPage } from './kor-page';

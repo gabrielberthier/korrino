@@ -1,1 +1,1 @@
-export { korBadge } from './kor-badge';
+export { KorBadge } from './kor-badge';

@@ -21,7 +21,7 @@ import '../icon';
  * @cssprop --functions-gap - Defines the gap between elements in the functions slot.
  * @cssprop --footer-gap - Defines the gap between elements in the footer slot.
  */
-export declare class korDrawer extends LitElement {
+export declare class KorDrawer extends LitElement {
     label: string | undefined;
     icon: string | undefined;
     position: 'left' | 'right' | 'top' | 'bottom';
@@ -34,7 +34,7 @@ export declare class korDrawer extends LitElement {
     emptyFunctions: boolean;
     emptyFooter: boolean;
     static get styles(): import("lit").CSSResultGroup[];
-    render(): import("lit-html").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
     attributeChangedCallback(name: string, oldval: string, newval: string): void;
     getCardSize(): any;
 }

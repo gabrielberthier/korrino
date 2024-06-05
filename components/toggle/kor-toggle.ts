@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../text';
 
@@ -9,7 +9,7 @@ import '../text';
  * @prop {Boolean} disabled - If set to true, disables mouse clicks and the style gets updated.
  */
 
-export class korToggle extends LitElement {
+export class KorToggle extends LitElement {
   @property({ type: String, reflect: true }) label: string | undefined;
   @property({ type: Boolean, reflect: true }) active: boolean | undefined;
   @property({ type: Boolean, reflect: true }) disabled: boolean | undefined;
@@ -119,5 +119,5 @@ export class korToggle extends LitElement {
 }
 
 if (!window.customElements.get('kor-toggle')) {
-  window.customElements.define('kor-toggle', korToggle);
+  window.customElements.define('kor-toggle', KorToggle);
 }

@@ -1,1 +1,1 @@
-export { korToggle } from './kor-toggle';
+export { KorToggle } from './kor-toggle';

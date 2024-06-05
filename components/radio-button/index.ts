@@ -1,1 +1,1 @@
-export { korRadioButton } from './kor-radio-button';
+export { KorRadioButton } from './kor-radio-button';

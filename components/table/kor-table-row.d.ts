@@ -4,10 +4,10 @@ import { LitElement } from 'lit';
  *
  * @slot - Hosts (kor-table-cells).
  */
-export declare class korTableRow extends LitElement {
+export declare class KorTableRow extends LitElement {
     active: boolean | undefined;
     static get styles(): import("lit").CSSResultGroup[];
-    render(): import("lit-html").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
     attributeChangedCallback(name: string, oldval: string, newval: string): void;
     connectedCallback(): void;
     handleActive(): void;

@@ -1,2 +1,2 @@
-export { korBreadcrumbItem } from './kor-breadcrumb-item';
-export { korBreadcrumbs } from './kor-breadcrumbs';
+export { KorBreadcrumbItem } from './kor-breadcrumb-item';
+export { KorBreadcrumbs } from './kor-breadcrumbs';

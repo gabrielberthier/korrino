@@ -4,10 +4,10 @@ import { LitElement } from 'lit';
  *
  * @slot - Hosts kor-tab-items.
  */
-export declare class korTabs extends LitElement {
+export declare class KorTabs extends LitElement {
     orientation: 'horizontal' | 'vertical';
     static get styles(): import("lit").CSSResultGroup[];
-    render(): import("lit-html").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
     handleOrientation(): void;
     attributeChangedCallback(name: string, oldval: string, newval: string): void;
 }

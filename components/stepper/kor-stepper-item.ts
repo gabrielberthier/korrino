@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../icon';
 import '../text';
@@ -14,7 +14,7 @@ import '../text';
  * @prop {'horizontal'|'vertical'} orientation - Defines the orientation of the component. Possible values are `horizontal` and `vertical`.
  */
 
-export class korStepperItem extends LitElement {
+export class KorStepperItem extends LitElement {
   @property({ type: String, reflect: true }) label: string | undefined;
   @property({ type: String, reflect: true }) info: string | undefined;
   @property({ type: String, reflect: true }) icon: string | undefined;
@@ -216,5 +216,5 @@ export class korStepperItem extends LitElement {
 }
 
 if (!window.customElements.get('kor-stepper-item')) {
-  window.customElements.define('kor-stepper-item', korStepperItem);
+  window.customElements.define('kor-stepper-item', KorStepperItem);
 }

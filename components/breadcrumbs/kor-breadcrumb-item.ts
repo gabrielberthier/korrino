@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 import '../icon';
 import '../text';
@@ -9,7 +9,7 @@ import '../text';
  * @prop {Boolean} active - Defines whether the item is currently active or not.
  */
 
-export class korBreadcrumbItem extends LitElement {
+export class KorBreadcrumbItem extends LitElement {
   @property({ type: String, reflect: true }) label = 'Label';
   @property({ type: Boolean, reflect: true }) active: boolean | undefined;
 
@@ -71,5 +71,5 @@ export class korBreadcrumbItem extends LitElement {
 }
 
 if (!window.customElements.get('kor-breadcrumb-item')) {
-  window.customElements.define('kor-breadcrumb-item', korBreadcrumbItem);
+  window.customElements.define('kor-breadcrumb-item', KorBreadcrumbItem);
 }

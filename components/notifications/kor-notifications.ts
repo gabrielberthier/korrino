@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 
 /**
@@ -10,7 +10,7 @@ import { sharedStyles } from '../../shared-styles';
  * @cssprop --body-gap - Defines the gap between elements in the body slot.
  */
 
-export class korNotifications extends LitElement {
+export class KorNotifications extends LitElement {
   @property({ type: String, reflect: true }) position:
     | 'top-left'
     | 'top-right'
@@ -71,5 +71,5 @@ export class korNotifications extends LitElement {
 }
 
 if (!window.customElements.get('kor-notifications')) {
-  window.customElements.define('kor-notifications', korNotifications);
+  window.customElements.define('kor-notifications', KorNotifications);
 }

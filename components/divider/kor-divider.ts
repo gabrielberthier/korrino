@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 
 /**
@@ -7,7 +7,7 @@ import { sharedStyles } from '../../shared-styles';
  * @prop {'horizontal'|'vertical'} orientation - Defines the orientation of the divider. Possible values are `vertical` and `horizontal`.
  */
 
-export class korDivider extends LitElement {
+export class KorDivider extends LitElement {
   @property({ type: String, reflect: true }) spacing: 's' | 'm' | 'l' = 'm';
   @property({ type: String, reflect: true }) orientation:
     | 'horizontal'
@@ -68,5 +68,5 @@ export class korDivider extends LitElement {
 }
 
 if (!window.customElements.get('kor-divider')) {
-  window.customElements.define('kor-divider', korDivider);
+  window.customElements.define('kor-divider', KorDivider);
 }

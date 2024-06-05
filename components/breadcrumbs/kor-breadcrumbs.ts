@@ -5,7 +5,7 @@ import { sharedStyles } from '../../shared-styles';
  * @slot - The default slot. Takes `kor-breadcrumb-item`s as children.
  */
 
-export class korBreadcrumbs extends LitElement {
+export class KorBreadcrumbs extends LitElement {
   static get styles() {
     return [
       sharedStyles,
@@ -25,5 +25,5 @@ export class korBreadcrumbs extends LitElement {
 }
 
 if (!window.customElements.get('kor-breadcrumbs')) {
-  window.customElements.define('kor-breadcrumbs', korBreadcrumbs);
+  window.customElements.define('kor-breadcrumbs', KorBreadcrumbs);
 }

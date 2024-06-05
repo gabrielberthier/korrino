@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import { property } from 'lit/decorators';
+import { property } from 'lit/decorators.js';
 import { sharedStyles } from '../../shared-styles';
 
 /**
@@ -8,7 +8,7 @@ import { sharedStyles } from '../../shared-styles';
  * @slot - Hosts (kor-table-cells).
  */
 
-export class korTableRow extends LitElement {
+export class KorTableRow extends LitElement {
   @property({ type: Boolean, reflect: true }) active: boolean | undefined;
 
   static get styles() {
@@ -80,5 +80,5 @@ export class korTableRow extends LitElement {
 }
 
 if (!window.customElements.get('kor-table-row')) {
-  window.customElements.define('kor-table-row', korTableRow);
+  window.customElements.define('kor-table-row', KorTableRow);
 }

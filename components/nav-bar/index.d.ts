@@ -1,1 +1,1 @@
-export { korNavbar } from './kor-nav-bar';
+export { KorNavbar } from './kor-nav-bar';
